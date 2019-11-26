@@ -6,13 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin= {"html:TestReport"},
 		features="src/test/resources/Features",
 		glue="stepDefinitionPack",
-		monochrome = true,
-		tags= {"@vpva, @ipva", "@vpiva"}
+		monochrome = true
+		//tags= {"@OurWebsiteFeature"}
 		
 		)
 
