@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I am on facebook signup webpage (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter firstname &quot;Ataur&quot; in Firstname Textbox, lastname &quot;Tarafder&quot; in lastnameTextbox, email &quot;super@yahoo.com&quot; in email Textbox (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on SignUp button (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should create new account successfully (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I select valid payee &quot;Jim&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter valid amount &quot;600&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should get success message &quot;$600 transferred successfully to Jim!!&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I select valid payee &quot;Jim&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter invalid amount &quot;6000&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should get fail message &quot;Transfer failed!! account cannot be overdrawn&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I select invalid payee &quot;John&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter valid amount &quot;800&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should get fail message &quot;Transfer failed!! &#x27;John&#x27; is not approved. Please contact your branch&quot; (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2019-11-18T23:33:23Z" name="Default suite" finished-at="2019-11-18T23:33:54Z" duration-ms="30859">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2019-11-18T23:33:23Z" name="Default test" finished-at="2019-11-18T23:33:54Z" duration-ms="30859">
+      <class name="stepDefinitionPack.TestRunnerTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:23Z" name="setUpClass" finished-at="2019-11-18T23:33:23Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:23Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-18T23:33:33Z" duration-ms="10170" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["I want to create new account in Facebook signup webpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Facebook SignUp functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DFS515IC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\shobu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e312f4c3b34874287cee1c3386520448]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DFS515IC', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\shobu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e312f4c3b34874287cee1c3386520448
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at stepDefinitionPack.FacebookStepDefinition.i_click_on_SignUp_button(FacebookStepDefinition.java:39)
+at ✽.I click on SignUp button(src/test/resources/Features/Facebook.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on facebook signup webpage (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter firstname &quot;Ataur&quot; in Firstname Textbox, lastname &quot;Tarafder&quot; in lastnameTextbox, email &quot;super@yahoo.com&quot; in email Textbox (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on SignUp button (FAILED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should create new account successfully (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:33Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-18T23:33:40Z" duration-ms="6820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Fund transfer functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I select valid payee &quot;Jim&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter valid amount &quot;600&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should get success message &quot;$600 transferred successfully to Jim!!&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:40Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-18T23:33:47Z" duration-ms="6786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Fund transfer functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I select valid payee &quot;Jim&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter invalid amount &quot;6000&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should get fail message &quot;Transfer failed!! account cannot be overdrawn&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:47Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-18T23:33:54Z" duration-ms="6770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Fund transfer functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on fund transfer webpage (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I select invalid payee &quot;John&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter valid amount &quot;800&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on transfer button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should get fail message &quot;Transfer failed!! &#x27;John&#x27; is not approved. Please contact your branch&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepDefinitionPack.TestRunnerTest@6b26e945]" started-at="2019-11-18T23:33:54Z" name="tearDownClass" finished-at="2019-11-18T23:33:54Z" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepDefinitionPack.TestRunnerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
