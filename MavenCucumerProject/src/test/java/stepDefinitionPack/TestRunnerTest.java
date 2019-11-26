@@ -11,8 +11,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		plugin= {"html:TestReport"},
 		features="src/test/resources/Features",
 		glue="stepDefinitionPack",
-		monochrome = true
-		//tags= {"@vpva, @ipva", "@vpiva"}
+		monochrome = true,
+		tags= {"@vpva, @ipva", "@vpiva"}
 		
 		)
 
