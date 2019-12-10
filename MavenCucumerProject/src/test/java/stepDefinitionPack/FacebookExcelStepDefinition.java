@@ -25,7 +25,7 @@ public class FacebookExcelStepDefinition extends AbstractClass {
     public FacebookExcelStepDefinition() throws IOException{
     
        driver = AbstractClass.driver;
-       datamap = DataHelper.data("‪C:\\SELENIUMTRAINING\\FacebookData.xlsx","Data3");
+       datamap = DataHelper.data(System.getProperty("user.dir")+"//src//test//resources//Data//FacebookData.xlsx","Data3");
     }
 	
 	@Given("^User is on facebook signup page$")
@@ -46,22 +46,22 @@ public class FacebookExcelStepDefinition extends AbstractClass {
 		driver.findElement(By.name("firstname")).sendKeys(datamap.get(index).get("First Name"));
 		driver.findElement(By.name("lastname")).sendKeys(datamap.get(index).get("Last Name"));
 		driver.findElement(By.name("reg_email__")).sendKeys(datamap.get(index).get("Email"));
-		driver.findElement(By.name("reg_email_confirmation__")).sendKeys(datamap.get(index).get("AgEmail"));
+		driver.findElement(By.name("reg_email_confirmation__")).sendKeys(datamap.get(index).get("Again Email"));
 		driver.findElement(By.name("reg_passwd__")).sendKeys(datamap.get(index).get("Password"));
 		
 		Select Monthselect=new Select(driver.findElement(By.id("month")));
-		Monthselect.selectByVisibleText(datamap.get(index).get("Month"));
+		Monthselect.selectByVisibleText(datamap.get(index).get("Birth Month"));
 		
 	    Select DaySelect=new Select(driver.findElement(By.id("day")));
-	    DaySelect.selectByVisibleText(datamap.get(index).get("Day"));
+	    DaySelect.selectByVisibleText(datamap.get(index).get("Birth Day"));
 	    
 	    Select YearSelect=new Select(driver.findElement(By.id("year")));
-	    YearSelect.selectByVisibleText(datamap.get(index).get("Year"));
+	    YearSelect.selectByVisibleText(datamap.get(index).get("Birth Year"));
 	    
-	    if(datamap.get(index).get("Sex").equalsIgnoreCase("Female")){
+	    if(datamap.get(index).get("Gender").equalsIgnoreCase("Female")){
 			driver.findElement(By.xpath(".//*[@id='u_0_6']")).click();
 		}
-		else if(datamap.get(index).get("Sex").equalsIgnoreCase("Male")){
+		else if(datamap.get(index).get("Gender").equalsIgnoreCase("Male")){
 			driver.findElement(By.xpath(".//*[@id='u_0_7']")).click();
 		}
 	    
