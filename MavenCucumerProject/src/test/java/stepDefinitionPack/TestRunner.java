@@ -7,6 +7,7 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 //@RunWith(Cucumber.class)
+
 @CucumberOptions(
 		plugin= {"html:TestReport"},
 		features="src/test/resources/Features",
@@ -17,6 +18,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		)
 
 
-public class TestRunnerTest extends AbstractTestNGCucumberTests  {
+public class TestRunner extends AbstractTestNGCucumberTests  {
 
 }

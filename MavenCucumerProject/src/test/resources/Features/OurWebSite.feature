@@ -13,8 +13,7 @@ Feature: Ourwebsite signup funtionality
       | FirstName | LastName | Email           | AgainEmail      | PassWord  | Gender | Month | Day | Year |
       | Rocky     | Rahman1  | shobujr@aol.com | shobujr@aol.com | Guest@123 | Male   | Jan   |   1 | 1987 |
       | Rocky1    | Rahman2  | rocy1@aol.com   | shobujr@aol.com | Guest@123 | Female | Feb   |  11 | 1987 |
-      | Rocky2    | Rahman3  | rocky2@aol.com  | shobujr@aol.com | Guest@123 | Female | Mar   |  13 | 1982 |
-      
+      | Rocky2    | Rahman3  | rocky2@aol.com  | shobujr@aol.com | Guest@123 | Female | Mar   |  13 | 1982 |     
       | Rocky     | Rahman1  | shobujr@aol.com | shobujr@aol.com | Guest@123 | Male   | Jan   |   1 | 1987 |
       | Rocky1    | Rahman2  | rocy1@aol.com   | shobujr@aol.com | Guest@123 | Female | Feb   |  11 | 1987 |
       | Rocky2    | Rahman3  | rocky2@aol.com  | shobujr@aol.com | Guest@123 | Female | Mar   |  13 | 1982 |
