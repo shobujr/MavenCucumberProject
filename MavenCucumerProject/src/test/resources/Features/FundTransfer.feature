@@ -1,14 +1,16 @@
+
+@FundTransfer
 Feature: Fund transfer functionality
   As a user I want to fund transfer to my family or someone.
 
-	
+	@vpva
   Scenario: 
     Given I am on fund transfer webpage
     When I select valid payee "Jim"
     When I enter valid amount "600"
     And I click on transfer button
     Then I should get success message "$600 transferred successfully to Jim!!"
- 
+ @vpiva
   Scenario: 
     Given I am on fund transfer webpage
     When I select valid payee "Jim"

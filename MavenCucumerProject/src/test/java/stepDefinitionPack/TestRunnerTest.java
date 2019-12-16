@@ -12,12 +12,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		plugin= {"html:TestReport"},
 		features="src/test/resources/Features",
 		glue="stepDefinitionPack",
-		monochrome = true
-		//tags= {"@OurWebsiteFeature"}
+		monochrome = true,
+		tags= {"@FundTransfer", 
+				"@vpva, @vpiva"}
 		
 		)
 
 
-public class TestRunner extends AbstractTestNGCucumberTests  {
+public class TestRunnerTest extends AbstractTestNGCucumberTests  {
 
 }
